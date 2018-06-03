@@ -1,17 +1,14 @@
-/*
-var obj = {
-  name: 'Corentin'
-};
+// var obj = {
+//   name: 'Andrew'
+// };
+// var stringObj = JSON.stringify(obj);
+// console.log(typeof stringObj);
+// console.log(stringObj);
 
-var stringObj = JSON.stringify(obj);
-console.log(typeof stringObj);
-console.log(stringObj);*/
-
-/*
-var personString = '{"name": "Corentin", "age": 25}';
-var person = JSON.parse(personString);
-console.log(typeof person);
-console.log(person);*/
+// var personString = '{"name": "Andrew","age": 25}';
+// var person = JSON.parse(personString);
+// console.log(typeof person);
+// console.log(person);
 
 const fs = require('fs');
 
@@ -24,6 +21,5 @@ fs.writeFileSync('notes.json', originalNoteString);
 
 var noteString = fs.readFileSync('notes.json');
 var note = JSON.parse(noteString);
-
-console.log(typeof noteString);
+console.log(typeof note);
 console.log(note.title);
